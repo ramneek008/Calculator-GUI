@@ -70,7 +70,7 @@ public class Calculator1 implements ActionListener{
             st2 = tf1.getText();
             int a = Integer.parseInt(st1);
             int b = Integer.parseInt(st2);
-            int c=0;
+            float c=0;
             switch(op){
                 case "+":
                     c=a+b;
@@ -90,7 +90,7 @@ public class Calculator1 implements ActionListener{
                 case "/":
                     if(b!=0)
                     {
-                        c=a/b;
+                        c=(float)a/b;
                         st3 = String.valueOf(c);
                     }
                     else
